@@ -1,0 +1,26 @@
+# ES6: Write Concise Declarative Functions with ES6
+With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax:
+# Example:
+```javascript
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+```
+Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
+
+# Solution:
+```javascript
+// Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
+```
