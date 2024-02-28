@@ -22,10 +22,11 @@ queueTime([2,3,10], 2)
 // should return 12
 ```
 
-### Clarifications
+### Clarifications:
 - There is only ONE queue serving many tills, and
 - The order of the queue NEVER changes, and
 - The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.
+
 # Solution:
 ```javascript
 function queueTime (customers, n) {
